@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./login.css">
+    <script src="./index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./login.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="logonBox">
+        <p id="emailHint">请输入邮箱！</p>
+        <p id="pwHint">请输入密码！</p>
+        <div class="logoBox">
+            <img src="./img/logo.png" alt="">
+        </div>
+        <div class="withincodeBox">
+            <a id="logonWithinCode" type="button">验证码登录</a>
+        </div>
+        <div class="withinpwBox">
+            <a id="logonWithinPW" type="button">密码登录</a>
+        </div>
+        <form action="index_submit" method="" accept-charset="utf-8" class="formBox" onsubmit="return submitLegister()">
+            <input id="Email" type="" name="" value="邮箱">
+            <div class="pwBox">
+                <input id="passWord" type="" name="" value="密码">
+                <!-- <input id="getCode" onclick="getcode()" type="button" name="" value="发送验证码"> -->
+            </div>
+            <input id="submitL" type="button" name="" value="登录" onclick="return log()">
+        </form>
+        <div class="forgetPW">
+            <a>忘记密码</a>
+        </div>
+        <div class="change2registerBox">
+            <a id="change2registerBox" href="index.html">注册用户</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

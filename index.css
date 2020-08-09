@@ -1,0 +1,134 @@
+body a {
+  text-decoration: none;
+  color: #FD7867;
+}
+body a:visited {
+  text-decoration: none;
+  color: #FD7867;
+}
+body a:linked {
+  text-decoration: none;
+  color: #FD7867;
+}
+
+.registerBox {
+  width: 500px;
+  height: 600px;
+  background-color: #545454;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+}
+.registerBox .formBox {
+  width: 440px;
+  margin: 0 auto;
+  position: relative;
+  top: 180px;
+}
+.registerBox #phoneNum {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #C8C8C8;
+  font-size: 18px;
+}
+.registerBox #phoneNum:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+.registerBox .codeBox {
+  width: 440px;
+  height: 40px;
+}
+.registerBox .codeBox #verificationCode {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #C8C8C8;
+  font-size: 18px;
+  width: 270px;
+  margin-right: 16px;
+  float: left;
+}
+.registerBox .codeBox #verificationCode:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+.registerBox .codeBox #getCode {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #C8C8C8;
+  font-size: 18px;
+  width: 140px;
+  height: 40px;
+  float: right;
+  background-color: #FD7867;
+  color: #FDE7CB;
+  font-size: 16px;
+}
+.registerBox .codeBox #getCode:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+.registerBox #submitR {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #C8C8C8;
+  font-size: 18px;
+  border-radius: 25px;
+  height: 40px;
+  float: right;
+  background-color: #FD7867;
+  color: #FDE7CB;
+  font-size: 16px;
+}
+.registerBox #submitR:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+
+.logoBox {
+  width: 95px;
+  height: 52px;
+  background-color: #545454;
+  position: absolute;
+  top: 30px;
+  left: 202.5px;
+}
+.logoBox p {
+  color: #FCFCFC;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.change2loginBox {
+  width: 160px;
+  height: 30px;
+  position: relative;
+  bottom: -200px;
+  float: right;
+  color: #FD7867;
+  /* 	background-color: #a9a9a9; */
+}
+
+/*# sourceMappingURL=index.css.map */

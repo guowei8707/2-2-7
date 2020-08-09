@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="registerBox">
+        <div class="logoBox">
+            <img src="./img/logo.png" alt="">
+            <p>注册</p>
+        </div>
+        <form action="index_submit" method="" accept-charset="utf-8" class="formBox" onsubmit="return submitregister()">
+            <input id="phoneNum" type="" name="" value="手机号">
+            <div class="codeBox">
+                <input id="verificationCode" type="" name="" value="验证码">
+                <input id="getCode" onclick="getcode()" type="button" name="" value="发送验证码">
+            </div>
+            <input id="submitR" type="submit" name="" value="快速注册">
+        </form>
+        <div class="change2loginBox">
+            <a id="change2loginBox" href="login.html">使用已有账号登录</a>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

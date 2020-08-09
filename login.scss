@@ -1,0 +1,259 @@
+$registerBox_width: 500px;
+$registerBox_height: 600px;
+$registerBox_positionTop: 50px;
+
+$logoBox_width: 95px;
+$logoBox_height: 52px;
+$logoBox_positionTop: 30px;
+
+
+
+@mixin colorOrange {
+    color: #FD7867;
+}
+
+@mixin colorAsh {
+    color: #C2C2C2;
+}
+
+@mixin background-colorGray {
+    background-color: #545454;
+}
+
+@mixin buttonSLM {
+    color: #FCFCFC;
+
+    font: {
+        weight: bold;
+        size: 18px;
+    }
+
+    text: {
+        align: center;
+    }
+
+    margin: {
+        top: 30px;
+    }
+}
+
+@mixin inputL {
+    height: 40px;
+    width: $registerBox_width - 60px;
+    padding: 0px;
+    border: 0px;
+
+    margin: {
+        top: 30px;
+        bottom: 30px;
+    }
+
+    color: #C8C8C8;
+
+    font: {
+        size: 18px;
+    }
+
+    &:focus {
+        color: #f050f0;
+        border: none;
+        outline: none;
+    }
+}
+
+@mixin bottomLink {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    float: right;
+}
+
+@mixin buttonL {
+    height: 40px;
+    float: right;
+    background-color: #FD7867;
+    color: #FDE7CB;
+
+    font: {
+        size: 16px;
+    }
+}
+
+@mixin removalPseudoA {
+    text-decoration: none;
+    @include colorOrange;
+
+    &:visited {
+        @include colorOrange;
+    }
+
+    &:linked {
+        @include colorOrange;
+    }
+
+    &:hover {
+        @include colorOrange;
+    }
+}
+
+@mixin additionalPseudoButton {
+    &:hover {
+        font: {
+            color: #FD7867;
+        }
+    }
+}
+
+body {
+    a {
+        @include removalPseudoA;
+    }
+
+    button {
+        @include additionalPseudoButton;
+    }
+
+    position: relative;
+
+    #submitL {
+        @include inputL;
+        border-radius: 25px;
+        @include buttonL;
+        position: absolute;
+        left: 0px;
+        bottom: -220px;
+    }
+}
+
+.logonBox {
+    width: $registerBox_width;
+    height: $registerBox_height;
+    @include background-colorGray;
+    position: relative;
+    top: $registerBox_positionTop;
+    margin: 0 auto;
+
+    .formBox {
+        width: $registerBox_width - 60px;
+        margin: 0 auto;
+        position: relative;
+        top: 130px;
+    }
+
+    #Email {
+        @include inputL;
+    }
+
+    #emailHint {
+        @include colorOrange;
+        display: none;
+        position: absolute;
+        top: 220px;
+        left: 30px;
+    }
+
+    #pwHint {
+        @include colorOrange;
+        display: none;
+        position: absolute;
+        top: 330px;
+        left: 30px;
+    }
+
+    .pwBox {
+        width: 440px;
+        height: 40px;
+
+        #passWord {
+            @include inputL;
+            width: 440px;
+
+            margin: {
+                right: 16px;
+            }
+
+            float: left;
+        }
+
+        /*         #getCode {
+            @include inputL;
+            width: 140px;
+            @include buttonL;
+        } */
+    }
+}
+
+
+.logoBox {
+    width: $logoBox_width;
+    height: $logoBox_height;
+    @include background-colorGray;
+    position: absolute;
+    top: $logoBox_positionTop;
+    left: $registerBox_width/2 - $logoBox_width/2;
+}
+
+.withincodeBox {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    float: left;
+
+    #logonWithinCode {
+        @include buttonSLM;
+        @include background-colorGray;
+
+        font: {
+            size: 14px;
+        }
+
+        /*         &:hover {
+            cursor: pointer;
+            @include colorOrange;
+        } */
+    }
+}
+
+.withinpwBox {
+    width: 80px;
+    top: 110px;
+    right: 70px;
+    position: relative;
+    float: right;
+
+    #logonWithinPW {
+        @include buttonSLM;
+        @include background-colorGray;
+
+        font: {
+            size: 14px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            @include colorOrange;
+        }
+    }
+}
+
+.forgetPW {
+    @include bottomLink;
+    position: absolute;
+    right: 20px;
+    bottom: 200px;
+
+    a {
+        @include colorAsh;
+    }
+
+}
+
+.change2registerBox {
+    @include bottomLink;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    /*  background-color: #a9a9a9; */
+}

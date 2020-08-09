@@ -1,0 +1,192 @@
+body {
+  position: relative;
+}
+body a {
+  text-decoration: none;
+  color: #FD7867;
+}
+body a:visited {
+  color: #FD7867;
+}
+body a:linked {
+  color: #FD7867;
+}
+body a:hover {
+  color: #FD7867;
+}
+body button:hover {
+  font-color: #FD7867;
+}
+body #submitL {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #C8C8C8;
+  font-size: 18px;
+  border-radius: 25px;
+  height: 40px;
+  float: right;
+  background-color: #FD7867;
+  color: #FDE7CB;
+  font-size: 16px;
+  position: absolute;
+  left: 0px;
+  bottom: -220px;
+}
+body #submitL:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+
+.logonBox {
+  width: 500px;
+  height: 600px;
+  background-color: #545454;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+}
+.logonBox .formBox {
+  width: 440px;
+  margin: 0 auto;
+  position: relative;
+  top: 130px;
+}
+.logonBox #Email {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #C8C8C8;
+  font-size: 18px;
+}
+.logonBox #Email:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+.logonBox #emailHint {
+  color: #FD7867;
+  display: none;
+  position: absolute;
+  top: 220px;
+  left: 30px;
+}
+.logonBox #pwHint {
+  color: #FD7867;
+  display: none;
+  position: absolute;
+  top: 330px;
+  left: 30px;
+}
+.logonBox .pwBox {
+  width: 440px;
+  height: 40px;
+  /*         #getCode {
+      @include inputL;
+      width: 140px;
+      @include buttonL;
+  } */
+}
+.logonBox .pwBox #passWord {
+  height: 40px;
+  width: 440px;
+  padding: 0px;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #C8C8C8;
+  font-size: 18px;
+  width: 440px;
+  margin-right: 16px;
+  float: left;
+}
+.logonBox .pwBox #passWord:focus {
+  color: #f050f0;
+  border: none;
+  outline: none;
+}
+
+.logoBox {
+  width: 95px;
+  height: 52px;
+  background-color: #545454;
+  position: absolute;
+  top: 30px;
+  left: 202.5px;
+}
+
+.withincodeBox {
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+  float: left;
+}
+.withincodeBox #logonWithinCode {
+  color: #FCFCFC;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #545454;
+  font-size: 14px;
+  /*         &:hover {
+      cursor: pointer;
+      @include colorOrange;
+  } */
+}
+
+.withinpwBox {
+  width: 80px;
+  top: 110px;
+  right: 70px;
+  position: relative;
+  float: right;
+}
+.withinpwBox #logonWithinPW {
+  color: #FCFCFC;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #545454;
+  font-size: 14px;
+}
+.withinpwBox #logonWithinPW:hover {
+  cursor: pointer;
+  color: #FD7867;
+}
+
+.forgetPW {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 200px;
+}
+.forgetPW a {
+  color: #C2C2C2;
+}
+
+.change2registerBox {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  float: right;
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  /*  background-color: #a9a9a9; */
+}
+
+/*# sourceMappingURL=login.css.map */
