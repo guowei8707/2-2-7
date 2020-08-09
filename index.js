@@ -50,6 +50,6 @@ var submitregister = function() {
     if (registerObj.isphoneNum && registerObj.isverificationCode) {
         alert("注册成功!");
     } else {
-        alert("注册失败！");
+        alert("注册失败！验证码纯数字且必须是6位");
     }
 }
